@@ -1,0 +1,257 @@
+.centre-div-main-parent {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    /* top: 90px; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.centre-div {
+    height: 400px;
+    max-width: 560px;
+    width: 100%;
+    position: fixed;
+    top: 74px;
+    /* left: 518px; */
+    border: 1px solid #fff;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px black;
+    border-radius: 10px;
+}
+
+.centre-div-parent {
+    height: 375px;
+    max-width: 536px;
+    width: 100%;
+    /* border: 1px solid #080808; */
+    background-color: #fff;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cross {
+    font-size: 25px;
+    text-decoration: none;
+    color: #080808;
+    margin-left: 515px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cross:hover {
+    color: red;
+}
+
+.content_wrap {
+    height: 330px;
+    width: 520px;
+    /* width: 100%; */
+    /* border: 1px solid #080808; */
+    /* background-color: #fff; */
+    /* margin-top: -6px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* gap: 10px; */
+}
+
+.left_content {
+    height: 320px;
+    width: 250px;
+    /* border: 1px solid #080808; */
+    margin: auto;
+}
+
+.right_content {
+    height: 320px;
+    width: 250px;
+    /* border: 1px solid #080808; */
+    margin: auto;
+}
+
+.popup-img {
+    height: 200px;
+    width: 180px;
+    /* margin: 10px; */
+    margin-left: 34px;
+    border-radius: 10px;
+}
+
+.prname {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prpri {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.incdec {
+    height: 40px;
+    width: 250px;
+    /* border: 1px solid #080808; */
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.increm {
+    height: 38px;
+    width: 40px;
+    font-size: larger;
+    font-weight: bold;
+    outline: none;
+    background-color: rgb(49, 154, 196);
+    border: none;
+    border-radius: 5px;
+}
+
+.decrem {
+    height: 38px;
+    width: 40px;
+    font-size: larger;
+    font-weight: bold;
+    outline: none;
+    background-color: rgb(49, 154, 196);
+    border: none;
+    border-radius: 5px;
+}
+
+.quant {
+    height: 34px;
+    width: 40px;
+    font-size: larger;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+}
+
+.formhed {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formnam {
+    height: 45px;
+    width: 221px;
+    margin-left: 14px;
+    border-radius: 10px;
+    outline: none;
+    /* border: none; */
+    border: 1px solid rgb(109, 107, 107);
+}
+
+
+.formnam input {
+    height: 43px;
+    width: 220px;
+    /* margin-left: 14px; */
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    /* border: 1px solid black; */
+}
+
+.formnam input:focus {
+    border: 1px solid black;
+}
+
+.formadr {
+    height: 166px;
+    width: 220px;
+    margin-left: 14px;
+    margin-top: 14px;
+    border-radius: 10px;
+}
+
+.buybutton {
+    height: 40px;
+    width: 220px;
+    margin-left: 14px;
+    margin-top: 8px;
+    background-color: rgb(49, 154, 196);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 571px) {
+
+    .centre-div {
+        height: auto;
+        max-width: 320px;
+        top: 80px;
+        margin: auto;
+    }
+
+    .centre-div-parent {
+        height: auto;
+        max-width: 350px;
+        margin: 10px 0;
+    }
+
+    .content_wrap {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_content,
+    .right_content {
+        width: 100%;
+        height: auto;
+    }
+
+    .right_content {
+        margin-top: 10px;
+    }
+
+    .popup-img {
+        display: block;
+        margin: auto;
+    }
+
+    .cross {
+        display: block;
+        text-align: right;
+        padding-right: 10px;
+        margin-left: 0;
+    }
+
+    .formnam,
+    .formnam input,
+    .formadr,
+    .buybutton {
+        max-width: 280px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .incdec {
+        width: 100%;
+    }
+
+    .formnam input{
+        height: 44px;
+    }
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, viewport-fit=cover">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>Solo</title>
+</head>
+
+<body>
+    <div class="navi">
+        <div class="navchild_l">
+            <img class="logo" src="logo1.png" alt="">
+        </div>
+        <div class="nav_mobile">
+            <a>Category</a>
+            <svg onclick="cat_drop()" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                <g>
+                    <path
+                        d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                </g>
+            </svg>
+        </div>
+        <div class="navchild_r">
+            <ul>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="sneakers.html">SNEAKERS</a></li>
+            </ul>
+        </div>
+        <div class="menu_svg">
+            <svg onclick="menu_drop()" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" x="0" y="0" viewBox="0 0 32 32"
+                style="enable-background:new 0 0 512 512" xml:space="preserve" fill-rule="evenodd"
+                class="hovered-paths">
+                <g>
+                    <path
+                        d="M15 20c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 12 17H5c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 2 20v7c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 5 30h7c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 15 27zm15 0c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 27 17h-7c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 17 20v7c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 20 30h7c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 30 27zm-17 0v7a.997.997 0 0 1-1 1H5a.997.997 0 0 1-1-1v-7a.997.997 0 0 1 1-1h7a.997.997 0 0 1 1 1zm15 0v7a.997.997 0 0 1-1 1h-7a.997.997 0 0 1-1-1v-7a.997.997 0 0 1 1-1h7a.997.997 0 0 1 1 1zm-2.379-5.207 4.172-4.172a3 3 0 0 0 0-4.242l-4.172-4.172a3 3 0 0 0-4.242 0l-4.172 4.172a3 3 0 0 0 0 4.242l4.172 4.172a3 3 0 0 0 4.242 0zM15 5c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 12 2H5c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 2 5v7c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 5 15h7c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 15 12zm13.379 4.207-4.172 4.172a1 1 0 0 1-1.414 0l-4.172-4.172a1 1 0 0 1 0-1.414l4.172-4.172a1 1 0 0 1 1.414 0l4.172 4.172a1 1 0 0 1 0 1.414zM13 5v7a.997.997 0 0 1-1 1H5a.997.997 0 0 1-1-1V5a.997.997 0 0 1 1-1h7a.997.997 0 0 1 1 1z"
+                        fill="black" opacity="1" data-original="#000000" class="hovered-path"></path>
+                </g>
+            </svg>
+        </div>
+        <div class="navchild_m">
+            <ul>
+                <li><a class="main" href="#home">Home</a></li>
+                <!-- <li><a href="">About</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="svg">
+                <div class="svgs"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
+                        viewBox="0 0 461.516 461.516" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                        <g>
+                            <path
+                                d="M185.746 371.332a185.294 185.294 0 0 0 113.866-39.11L422.39 455c9.172 8.858 23.787 8.604 32.645-.568 8.641-8.947 8.641-23.131 0-32.077L332.257 299.577c62.899-80.968 48.252-197.595-32.716-260.494S101.947-9.169 39.048 71.799-9.204 269.394 71.764 332.293a185.64 185.64 0 0 0 113.982 39.039zM87.095 87.059c54.484-54.485 142.82-54.486 197.305-.002s54.486 142.82.002 197.305-142.82 54.486-197.305.002l-.002-.002c-54.484-54.087-54.805-142.101-.718-196.585l.718-.718z"
+                                fill="#000000" opacity="1" data-original="#000000"></path>
+                        </g>
+                    </svg></div>
+                <div class="svgs"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg></div>
+                <div class="svgs"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
+                        viewBox="0 0 511.855 511.855" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                        class="">
+                        <g>
+                            <path
+                                d="M466.186 74.688C436.688 45.19 397.47 28.945 355.754 28.945c-36.894 0-71.836 12.708-99.827 36.051-27.989-23.343-62.933-36.051-99.825-36.051-41.716 0-80.936 16.245-110.433 45.743-60.891 60.891-60.892 159.97 0 220.865l171.249 171.249c10.389 10.387 24.242 16.107 39.01 16.107s28.621-5.721 39.01-16.108l171.248-171.248c60.892-60.894 60.892-159.974 0-220.865z"
+                                fill="currentColor" opacity="1" data-original="#000000"></path>
+                        </g>
+                    </svg></div>
+                <div class="svgs"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
+                        viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                            <path
+                                d="M1 1a1 1 0 1 0 0 2h1.78a.694.694 35.784 0 1 .657.474l3.297 9.893c.147.44.165.912.053 1.362l-.271 1.087C6.117 17.41 7.358 19 9 19h12a1 1 0 1 0 0-2H9c-.39 0-.64-.32-.545-.697l.205-.818A.64.64 142.028 0 1 9.28 15H20a1 1 0 0 0 .95-.684l2.665-8A1 1 0 0 0 22.666 5H6.555a.694.694 35.783 0 1-.658-.474l-.948-2.842A1 1 0 0 0 4 1zm7 19a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                                paint-order="fill markers stroke" fill="#000000" opacity="1" data-original="#000000"
+                                class=""></path>
+                        </g>
+                    </svg></div>
+            </div>
+        </div>
+    </div>
+    <div class="parent" id="home">
+        <div class="carosel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="ca4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ca7.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ca2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ca3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ca6.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ca5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ca8.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ca9.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="head">
+                <p>New Arrivals</p>
+            </div>
+            <div class="itemsbuy">
+                <div class="itemssl">
+                    <div class="image">
+                        <img class="realsale" src="sale1.png" alt="">
+                    </div>
+                    <div class="imagenm">
+                        <p><b>One Piece:Luffy</b></p>
+                    </div>
+                    <div class="buy_parent">
+                        <div class="buy_l">
+                            <div class="imgdesc">
+                                <p>Oversized T-Shirt</p>
+                            </div>
+                            <div class="price">
+                                <p><b>₹ 719</b></p>
+                            </div>
+                        </div>
+                        <div class="buy_butt">
+                            <button onclick="buy_popup('sale1.png','One Piece:Luffy',719)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemssl">
+                    <div class="image">
+                        <img class="realsale" src="sale6.png" alt="">
+                    </div>
+                    <div class="imagenm">
+                        <p><b>Hello Kitty:Kitty</b></p>
+                    </div>
+                    <div class="buy_parent">
+                        <div class="buy_l">
+                            <div class="imgdesc">
+                                <p>Oversized T-Shirt</p>
+                            </div>
+                            <div class="price">
+                                <p><b>₹ 899</b></p>
+                            </div>
+                        </div>
+                        <div class="buy_butt">
+                            <button onclick="buy_popup('sale6.png','Hello Kitty:Kitty',899)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemssl">
+                    <div class="image">
+                        <img class="realsale" src="sale3.png" alt="">
+                    </div>
+                    <div class="imagenm">
+                        <p><b>Spider-Man</b></p>
+                    </div>
+                    <div class="buy_parent">
+                        <div class="buy_l">
+                            <div class="imgdesc">
+                                <p>T-Shirt</p>
+                            </div>
+                            <div class="price">
+                                <p><b>₹ 599</b></p>
+                            </div>
+                        </div>
+                        <div class="buy_butt">
+                            <button onclick="buy_popup('sale3.png','Spider-Man',599)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemssl">
+                    <div class="image">
+                        <img class="realsale" src="sale4.png" alt="">
+                    </div>
+                    <div class="imagenm">
+                        <p><b>One Piece:Jolly Roger</b></p>
+                    </div>
+                    <div class="buy_parent">
+                        <div class="buy_l">
+                            <div class="imgdesc">
+                                <p>Oversized T-Shirt</p>
+                            </div>
+                            <div class="price">
+                                <p><b>₹ 1,399</b></p>
+                            </div>
+                        </div>
+                        <div class="buy_butt">
+                            <button onclick="buy_popup('sale4.png','One Piece:Jolly Roger',1399)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemssl">
+                    <div class="image">
+                        <img class="realsale" src="sale5.png" alt="">
+                    </div>
+                    <div class="imagenm">
+                        <p><b>Hydros:Deadpool 2.0</b></p>
+                    </div>
+                    <div class="buy_parent">
+                        <div class="buy_l">
+                            <div class="imgdesc">
+                                <p>Men Clogs</p>
+                            </div>
+                            <div class="price">
+                                <p><b>₹ 1,299</b></p>
+                            </div>
+                        </div>
+                        <div class="buy_butt">
+                            <button onclick="buy_popup('sale5.png','Hydros:Deadpool 2.0',1299)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemssl">
+                    <div class="image">
+                        <img class="realsale" src="sale9.png" alt="">
+                    </div>
+                    <div class="imagenm">
+                        <p><b>Race Edition:Own Lane</b></p>
+                    </div>
+                    <div class="buy_parent">
+                        <div class="buy_l">
+                            <div class="imgdesc">
+                                <p>Oversized T-Shirt</p>
+                            </div>
+                            <div class="price">
+                                <p><b>₹ 1,299</b></p>
+                            </div>
+                        </div>
+                        <div class="buy_butt">
+                            <button onclick="buy_popup('sale9.png','Race Edition:Own Lane',1299)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemssl">
+                    <div class="image">
+                        <img class="realsale" src="sale7.png" alt="">
+                    </div>
+                    <div class="imagenm">
+                        <p><b>One Piece:Jolly Roger</b></p>
+                    </div>
+                    <div class="buy_parent">
+                        <div class="buy_l">
+                            <div class="imgdesc">
+                                <p>Hoodie</p>
+                            </div>
+                            <div class="price">
+                                <p><b>₹ 1,499</b></p>
+                            </div>
+                        </div>
+                        <div class="buy_butt">
+                            <button onclick="buy_popup('sale7.png','One Piece:Jolly Roger',1499)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemssl">
+                    <div class="image">
+                        <img class="realsale" src="sale8.png" alt="">
+                    </div>
+                    <div class="imagenm">
+                        <p><b>Naruto Shippuden:Sasuke</b></p>
+                    </div>
+                    <div class="buy_parent">
+                        <div class="buy_l">
+                            <div class="imgdesc">
+                                <p>Men High Top Sneakers</p>
+                            </div>
+                            <div class="price">
+                                <p><b>₹ 2,999</b></p>
+                            </div>
+                        </div>
+                        <div class="buy_butt">
+                            <button onclick="buy_popup('sale8.png','Naruto Shippuden:Sasuke',2999)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemssl">
+                    <div class="image">
+                        <img class="realsale" src="sale2.png" alt="">
+                    </div>
+                    <div class="imagenm">
+                        <p><b>Solo Edition:Magic</b></p>
+                    </div>
+                    <div class="buy_parent">
+                        <div class="buy_l">
+                            <div class="imgdesc">
+                                <p>T-Shirt</p>
+                            </div>
+                            <div class="price">
+                                <p><b>₹ 599</b></p>
+                            </div>
+                        </div>
+                        <div class="buy_butt">
+                            <button onclick="buy_popup('sale2.png','Solo Edition:Magic',599)">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="contact">
+            <div class="ftheader">
+                <p class="headerft">HOMEGROWN INDIAN BRAND </p>
+            </div>
+            <div class="ftcontact">
+                <div class="ftcolumns">
+                    <div class="ftcol">
+                        <h4>STYLE</h4>
+                        <a href="">Free Returns</a>
+                        <a href="">Size Guide</a>
+                        <a href="">Gift Cards</a>
+                        <a href="">Loyalty Program</a>
+                    </div>
+                    <div class="ftcol">
+                        <h4>COMPANY</h4>
+                        <a href="">About Us</a>
+                        <a href="">Careers</a>
+                        <a href="">Sustainability</a>
+                        <a href="">Press</a>
+                    </div>
+                    <div class="ftcol">
+                        <h4>HELP</h4>
+                        <a href="">Contact Us / FAQs</a>
+                        <a href="">Track My Order</a>
+                        <a href="">Returns & Exchanges</a>
+                        <a href="">Affiliate Program</a>
+                    </div>
+                    <div class="ftcol">
+                        <h4>SHOP</h4>
+                        <a href="">Men</a>
+                        <a href="">Women</a>
+                        <a href="">Sneakers</a>
+                        <a href="">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="ftbottom">
+                    <div class="ftsocials">
+                        <a href="" class="ftsocial">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                        <a href="" class="ftsocial">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                        </a>
+                        <a href="" class="ftsocial">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="ftlegal">
+                        <a href="">Terms of Use</a>
+                        <a href="">Cookies</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Cookie Settings</a>
+                    </div>
+                    <div class="ftcopy">
+                        <span>© 2026 All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menuu">
+        <div class="menuu_items">
+            <a href="#home">Home</a>
+        </div>
+        <!-- <div class="menuu_items">
+            <a href="">About</a>
+        </div> -->
+        <div class="menuu_items">
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menuu_items">
+            <a href="">Search</a>
+        </div>
+        <div class="menuu_items">
+            <a href="">Profile</a>
+        </div>
+        <div class="menuu_items">
+            <a href="">Favourites</a>
+        </div>
+        <div class="menuu_items">
+            <a href="">Cart</a>
+        </div>
+    </div>
+    <div class="categ">
+        <div class="categ_items">
+            <a href="men.html">MEN</a>
+        </div>
+        <div class="categ_items">
+            <a href="women.html">WOMEN</a>
+        </div>
+        <div class="categ_items">
+            <a href="sneakers.html">SNEAKERS</a>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
