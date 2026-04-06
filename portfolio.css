@@ -645,7 +645,7 @@ body::-webkit-scrollbar {
 }
 
 .contactcards {
-    max-width: 600px;
+    max-width: 560px;
     width: 100%;
     display: flex;
     margin: auto;
@@ -658,8 +658,24 @@ body::-webkit-scrollbar {
 }
 
 .contactcard {
-    flex: 1;
-    min-width: 160px;
+    width: 100%;
+    max-width: 232px;
+    height: auto;
+    border: 1px solid #00000036;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    background-color: #f5f4ee;
+    border-radius: 6px;
+    padding: 22px 16px;
+    text-align: center;
+}
+
+.contactcard1 {
+    width: 100%;
+    max-width: 564px;
     height: auto;
     border: 1px solid #00000036;
     display: flex;
@@ -681,9 +697,30 @@ body::-webkit-scrollbar {
     color: rgba(140, 122, 10, 1);
 }
 
+.contactcard1 h2 {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(140, 122, 10, 1);
+}
+
 .contactcard p {
     font-size: 13px;
     color: #7a7a60;
+}
+
+.contactcard1 p {
+    font-size: 13px;
+    color: #7a7a60;
+}
+
+.contactcard1:hover {
+    border-color: rgba(170, 150, 22, 1);
+    box-shadow: 0 4px 20px rgba(170, 150, 22, 0.2);
+    transform: translateY(-4px);
+    background-color: #eeecdf;
+    cursor: pointer;
 }
 
 .contactcard:hover {
@@ -747,10 +784,6 @@ body::-webkit-scrollbar {
     box-sizing: border-box;
 }
 
-.forminput::placeholder,
-.formtxar::placeholder {
-    color: #7a7a60;
-}
 
 .forminput:focus,
 .formtxar:focus {
@@ -877,5 +910,11 @@ body::-webkit-scrollbar {
 
     .content {
         top: 110px;
+    }
+}
+
+@media screen and (max-width: 553px){
+    .contactcard{
+        max-width: 564px;
     }
 }
